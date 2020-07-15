@@ -10,6 +10,14 @@ body {
   font-family: var(--main-font);
   font-size: 14px;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .list {
   list-style: none;
   padding: 0px;
@@ -32,7 +40,7 @@ h2 {
   color: var(--primary-text-color);
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -260,7 +268,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
