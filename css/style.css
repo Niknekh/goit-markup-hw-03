@@ -197,17 +197,23 @@ h2 {
   text-transform: uppercase;
   /* color: var(--primary-background-color); */
 }
+.works-list-img {
+  display: block;
+}
 /* OUR TEAM */
+.team {
+  background-color: #f5f4fa;
+}
 .team .container {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #f5f4fa;
 }
 .team-list {
   display: flex;
 }
 .team-list-item {
   background-color: var(--primary-background-color);
+  padding-bottom: 24px;
 }
 .team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -241,10 +247,9 @@ h2 {
   display: flex;
   padding-right: 32px;
   padding-left: 32px;
-  padding-bottom: 24px;
 }
 .social-list-item {
-  padding: 12px;
+  padding: 10px 12px;
 }
 .social-list-item:not(:last-child) {
   margin-right: 10px;
@@ -287,6 +292,9 @@ h2 {
 
   display: flex;
 }
+.contacts {
+  margin-right: 69px;
+}
 .footer .contacts-list {
   display: block;
 }
@@ -295,8 +303,12 @@ h2 {
   margin-bottom: 20px;
   padding: 0;
   display: flex;
+  margin-right: 0px;
 }
-.contacts-list-item:not(:last-child) {
+.footer .contacts-list-item {
+  margin-right: 0px;
+}
+.footer .contacts-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer .contacts-list-item-link {
@@ -319,15 +331,17 @@ h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+  margin-bottom: 20px;
+  display: inline-block;
 }
 .footer .social-list {
   padding: 0;
 }
-.footer .social-list-item:first-child {
-  padding-left: 0px;
-}
 
 /* PORTFOLIO PAGE */
+.header-border {
+  border: 1px solid #ececec;
+}
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -365,6 +379,10 @@ h2 {
 }
 .gallery-list-item {
   width: 370px;
+  padding-bottom: 20px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  border: 1px solid #eeeeee;
 }
 .gallery-list-item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -382,6 +400,7 @@ h2 {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
+  padding-left: 24px;
 }
 .gallery-list-desc {
   font-weight: 400;
@@ -389,6 +408,7 @@ h2 {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  padding-left: 24px;
 }
 .gallery-list a {
   text-decoration: none;
@@ -399,4 +419,5 @@ h2 {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
+  display: none;
 }
